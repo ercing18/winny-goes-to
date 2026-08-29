@@ -33,6 +33,7 @@
         { "time": "12:00", "title": "前往新飯店 & 寄行李", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn, Quận 1", "transport": "飯店接送", "note": "Check-in 14:00" },
         { "time": "13:00-15:00", "title": "午餐（越南家常菜）", "vnTitle": "Bếp Mẹ Ỉn", "address": "136/9 Lê Thánh Tôn, Bến Thành, Quận 1", "transport": "Grab", "note": "還沒預約 (請確認時間)", "color": "#722F37" },
         { "time": "15:00-16:00", "title": "濱城市場", "vnTitle": "Chợ Bến Thành", "address": "Ben Thanh, Ho Chi Minh", "transport": "走路 3 分鐘", "note": "" },
+        { "time": "15:30", "title": "換錢", "vnTitle": "Ha Tam Jewelry", "address": "2 Nguyễn An Ninh, Phường Bến Thành, Quận 1, Thành phố Hồ Chí Mnh", "transport": "濱城市場內", "note": ""},
         { "time": "16:00-17:00", "title": "咖啡公寓", "vnTitle": "The Cafe Apartment", "address": "42 Nguyễn Huệ, Quận 1", "transport": "走路 11 分鐘", "note": "" },
         { "time": "17:00-17:45", "title": "西貢書街", "vnTitle": "Đường sách Thành phố Hồ Chí Minh", "address": "2 Đ. Nguyễn Văn Bình, Bến Nghé, Quận 1", "transport": "走路 16 分鐘 / Grab", "note": "" },
         { "time": "17:45-18:15", "title": "西貢中心郵政局", "vnTitle": "Bưu điện trung tâm Sài Gòn", "address": "02 Công trường Công xã Paris, Quận 1", "transport": "走路 3 分鐘", "note": "" },
