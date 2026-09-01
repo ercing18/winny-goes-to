@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>日本東京・橫濱自由行</title>
+    <style>
+        :root {
+            --bg-color: #F8F9FA;
+            --primary: #8B263E; /* 和風深茜紅 */
+            --secondary: #C89B7B;
+            --accent: #F2E3D5;
+            --text-dark: #2B2D42;
+            --text-light: #FAFAFA;
+            --card-bg: #FFFFFF;
+        }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: var(--bg-color);
+            color: var(--text-dark);
+            margin: 0;
+            padding: 0 0 80px 0;
+        }
+        .top-header {
+            background: var(--primary);
+            color: var(--text-light);
+            padding: 15px 20px;
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        .tab-scroll-container {
+            display: flex;
+            overflow-x: auto;
+            background: var(--accent);
+            padding: 10px;
+            white-space: nowrap;
+            -webkit-overflow-scrolling: touch;
+        }
+        .tab-scroll-container::-webkit-scrollbar { display: none; }
+        .tab-button {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+            border-radius: 20px;
+            padding: 6px 16px;
+            margin-right: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .tab-button.active {
+            background: var(--primary);
+            color: var(--text-light);
+        }
+        .content-section { padding: 20px; display: none; }
+        .content-section.active { display: block; }
+        .timeline-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            border-left: 5px solid var(--secondary);
+            position: relative;
+        }
+        .time-badge {
+            background: var(--accent);
+            color: var(--primary);
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 8px;
+        }
+        .spot-title { font-size: 18px; font-weight: bold; margin: 0 0 4px 0; }
+        .vn-title { font-size: 14px; color: #666; margin: 0 0 8px 0; font-style: italic; }
+        .spot-details { font-size: 13px; color: #555; line-height: 1.5; margin-bottom: 10px; }
+        .action-buttons { display: flex; gap: 10px; }
+        .btn {
+            flex: 1;
+            padding: 8px;
+            text-align: center;
+            border-radius: 6px;
+            text-decoration: none;
+            font-size: 13px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+        .btn-map { background: var(--secondary); color: white; }
+        .btn-copy { background: #EEE; color: var(--text-dark); }
+        .budget-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            margin-bottom: 20px;
+        }
+        .budget-total { font-size: 28px; font-weight: bold; color: var(--primary); margin: 10px 0; }
+        .budget-input-group { display: flex; gap: 10px; margin-top: 15px; }
+        .budget-input { flex: 1; min-width: 0; padding: 10px; border: 1px solid #CCC; border-radius: 6px; }
+        .budget-submit { background: var(--primary); color: white; border: none; border-radius: 6px; padding: 10px 20px; font-weight: bold; cursor: pointer; }
+        .expense-item { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #EEE; font-size: 14px;}
+        .delete-btn { color: #E63946; background: none; border: none; font-size: 16px; cursor: pointer; }
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: white;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px 0;
+            box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+            z-index: 100;
+            padding-bottom: env(safe-area-inset-bottom);
+        }
+        .nav-item {
+            text-align: center;
+            font-size: 12px;
+            color: #888;
+            cursor: pointer;
+            flex: 1;
+        }
+        .nav-item.active { color: var(--primary); font-weight: bold; }
+        .nav-icon { font-size: 20px; display: block; margin-bottom: 4px; }
+
+        #loading-state {
+            text-align: center;
+            padding: 40px 20px;
+            color: #888;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-header" id="header-title">日本自由行 🇯🇵</div>
+
+<div class="tab-scroll-container" id="itinerary-tabs" style="display: none;"></div>
+
+<div id="page-itinerary" class="content-section active">
+    <div id="loading-state">行程資料載入中... ✈️</div>
+    <div id="timeline-container"></div>
+</div>
+
+<div id="page-collection" class="content-section">
+    <div class="tab-scroll-container" id="collection-tabs" style="background: transparent; padding: 0 0 15px 0;"></div>
+    <div id="collection-container"></div>
+</div>
+
+<div id="page-budget" class="content-section">
+    <div class="budget-card">
+        <div style="font-size:14px; color:#666;">累積總花費 (JPY)</div>
+        <div class="budget-total" id="total-jpy">0</div>
+        <div style="font-size:14px; color:#888;">約合台幣: <span id="total-twd">0</span> TWD</div>
+        <div class="budget-input-group" style="display: flex; flex-direction: column; gap: 10px; margin-top: 15px;">
+            <input type="text" id="expense-name" class="budget-input" placeholder="項目 (如: 買水、便利商店)" style="width: 100%">
+            <div style="display: flex; gap: 10px;">
+              <select id="expense-currency" class="budget-input" style="flex: 1; min-width: 0; padding: 0 5px;">
+                <option value="JPY">JPY (円)</option>
+                <option value="TWD">TWD (台幣)</option>
+              </select>
+              <input type="number" id="expense-amount" class="budget-input" placeholder="金額" style="flex: 1.5; min-width: 0;">
+            </div>
+        </div>
+        <button class="budget-submit" onclick="addExpense()" style="width: 100%; margin-top: 10px;">記一筆</button>
+    </div>
+    <h3 style="font-size:16px;">歷史紀錄</h3>
+    <div id="expense-list" style="background: white; border-radius: 12px; padding: 10px 20px;"></div>
+</div>
+
+<div id="page-tools" class="content-section">
+    <div class="timeline-card">
+        <h3 class="spot-title">🏨 東京住宿</h3>
+        <p class="vn-title">東京イーストサイド ホテル櫂会 (Hotel Kaie)</p>
+        <p class="spot-details">2 Chome-8-11 Shiomi, Koto City, Tokyo 135-0052</p>
+        <div class="action-buttons">
+            <button class="btn btn-copy" onclick="copyText('東京都江東区潮見2丁目8-11')">複製日文地址</button>
+        </div>
+    </div>
+    <div class="timeline-card">
+        <h3 class="spot-title">🧮 匯率換算 (JPY × 0.22)</h3>
+        <input type="number" id="calc-jpy" class="budget-input" placeholder="輸入日幣 (JPY)" oninput="calcTWD()" style="width:100%; margin-bottom:10px;">
+        <div style="font-size: 18px; font-weight: bold; color: var(--primary);">約 = <span id="calc-twd">0</span> TWD</div>
+    </div>
+    <div class="timeline-card">
+        <h3 class="spot-title">🗣️ 手指實用日語</h3>
+        <ul style="padding-left: 20px; color: #555; line-height: 1.8;">
+            <li>請問有中文菜單嗎？：中国語メニューはありますか？ (Chūgokugo menyū wa arimasu ka?)</li>
+            <li>買單／結帳：お会計お願いします (Okaikei onegaishimasu)</li>
+            <li>洗手間在哪裡？：お手洗いはどこですか？ (Otearai wa doko desu ka?)</li>
+            <li>請給我這個：これをお願いします (Kore o onegaishimasu)</li>
+            <li>可以免稅嗎？：免税できますか？ (Menzei dekimasu ka?)</li>
+        </ul>
+    </div>
+</div>
+
+<div class="bottom-nav">
+    <div class="nav-item active" onclick="switchPage('itinerary', this)">
+        <span class="nav-icon">📅</span>行程
+    </div>
+    <div class="nav-item" onclick="switchPage('collection', this)">
+        <span class="nav-icon">💡</span>名單
+    </div>
+    <div class="nav-item" onclick="switchPage('budget', this)">
+        <span class="nav-icon">💰</span>記帳
+    </div>
+    <div class="nav-item" onclick="switchPage('tools', this)">
+        <span class="nav-icon">🧰</span>工具
+    </div>
+</div>
+
+<script>
+    // 匯率設定：1 JPY ≈ 0.22 TWD (可依即時匯率調整)
+    const JPY_RATE = 0.22;
+
+    let TRIP_DATA = [];
+    let COLLECTION_DATA = [];
+
+    fetch('data_jp.json')
+        .then(response => {
+            if(!response.ok) throw new Error('Network response was not ok');
+            return response.json();
+        })
+        .then(data => {
+            TRIP_DATA = data.tripData;
+            COLLECTION_DATA = data.collectionData;
+
+            document.getElementById('loading-state').style.display = 'none';
+            document.getElementById('itinerary-tabs').style.display = 'flex';
+
+            renderItinerary();
+            renderCollection();
+        })
+        .catch(error => {
+            console.error('資料讀取失敗:', error);
+            document.getElementById('loading-state').innerText = '無法讀取行程資料，請確認 data_jp.json 檔案已上傳至正確位置。';
+        });
+
+    function switchPage(pageId, navElement) {
+        document.querySelectorAll('.content-section').forEach(el => el.classList.remove('active'));
+        document.querySelectorAll('.nav-item').forEach(el => el.classList.remove('active'));
+        document.getElementById(`page-${pageId}`).classList.add('active');
+        navElement.classList.add('active');
+
+        let titles = {
+            'itinerary': '日本自由行 🇯🇵',
+            'collection': '自由探索名單 💡',
+            'budget': '隨手記帳本 💰',
+            'tools': '旅行百寶箱 🧰'
+        };
+        document.getElementById('header-title').innerText = titles[pageId];
+
+        if(pageId === 'itinerary' && TRIP_DATA.length > 0) {
+            document.getElementById('itinerary-tabs').style.display = 'flex';
+        } else {
+            document.getElementById('itinerary-tabs').style.display = 'none';
+        }
+    }
+
+    function renderItinerary() {
+        const tabsContainer = document.getElementById('itinerary-tabs');
+        tabsContainer.innerHTML = '';
+
+        TRIP_DATA.forEach((day, index) => {
+            let btn = document.createElement('button');
+            btn.className = `tab-button ${index === 0 ? 'active' : ''}`;
+            btn.innerText = day.dateTitle;
+            btn.onclick = () => {
+                document.querySelectorAll('#itinerary-tabs .tab-button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderDaySpots(day.spots);
+            };
+            tabsContainer.appendChild(btn);
+        });
+        if(TRIP_DATA.length > 0) renderDaySpots(TRIP_DATA[0].spots);
+    }
+
+    function renderDaySpots(spots) {
+        const container = document.getElementById('timeline-container');
+        container.innerHTML = '';
+        spots.forEach(spot => {
+            let cardColor = spot.color ? spot.color : 'var(--secondary)';
+            let spotSubTitle = spot.vnTitle || spot.jpTitle || '';
+
+            container.innerHTML += `
+                <div class="timeline-card" style="border-left-color: ${cardColor};">
+                    <div class="time-badge">${spot.time}</div>
+                    <h3 class="spot-title">${spot.title}</h3>
+                    ${spotSubTitle ? `<p class="vn-title">${spotSubTitle}</p>` : ''}
+                    <p class="spot-details">
+                        ${spot.address ? `📍 ${spot.address}<br>` : ''}
+                        ${spot.transport ? `🚗 ${spot.transport}<br>` : ''}
+                        ${spot.note ? `📝 ${spot.note}` : ''}
+                    </p>
+                    <div class="action-buttons">
+                        ${(spot.address || spotSubTitle) ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(spot.address || spotSubTitle)}" target="_blank" class="btn btn-map">在地圖開啟</a>` : ''}
+                        ${spot.address ? `<button class="btn btn-copy" onclick="copyText('${spot.address}')">複製地址</button>` : ''}
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    function renderCollection() {
+        const tabsContainer = document.getElementById('collection-tabs');
+        tabsContainer.innerHTML = '';
+
+        COLLECTION_DATA.forEach((col, index) => {
+            let btn = document.createElement('button');
+            btn.className = `tab-button ${index === 0 ? 'active' : ''}`;
+            btn.innerText = col.title;
+            btn.onclick = () => {
+                document.querySelectorAll('#collection-tabs .tab-button').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                renderCollectionItems(col.items);
+            };
+            tabsContainer.appendChild(btn);
+        });
+        if(COLLECTION_DATA.length > 0) renderCollectionItems(COLLECTION_DATA[0].items);
+    }
+
+    function renderCollectionItems(items) {
+        const container = document.getElementById('collection-container');
+        container.innerHTML = '';
+        if(items.length === 0) {
+            container.innerHTML = `<div style="text-align:center; padding: 30px; color: #888;">目前還沒有名單喔！</div>`;
+            return;
+        }
+        items.forEach(item => {
+            let cardColor = item.color ? item.color : 'var(--secondary)';
+
+            container.innerHTML += `
+                <div class="timeline-card" style="border-left-color: ${cardColor};">
+                    <h3 class="spot-title">${item.name}</h3>
+                    <p class="spot-details">${item.desc || ''}${item.address ? `<br>📍 ${item.address}` : ''}</p>
+                    <div class="action-buttons" style="margin-top: 10px;">
+                        ${item.address ? `<a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(item.name + ' ' + item.address)}" target="_blank" class="btn btn-map">在地圖開啟</a>` : ''}
+                        ${item.address ? `<button class="btn btn-copy" onclick="copyText('${item.address}')">複製地址</button>` : ''}
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    // 獨立使用 japan_expenses Key，避免蓋掉胡志明市的記帳紀錄
+    let expenses = JSON.parse(localStorage.getItem('japan_expenses')) || [];
+
+    function updateBudgetUI() {
+        const list = document.getElementById('expense-list');
+        list.innerHTML = '';
+
+        let totalJPY = 0;
+        let totalTWD = 0;
+
+        expenses.forEach((exp, index) => {
+            let curr = exp.currency || 'JPY';
+            let displayAmount = '';
+
+            if (curr === 'JPY') {
+                totalJPY += exp.amount;
+                totalTWD += exp.amount * JPY_RATE;
+                displayAmount = `${exp.amount.toLocaleString()} JPY`;
+            } else {
+                totalTWD += exp.amount;
+                totalJPY += exp.amount / JPY_RATE;
+                displayAmount = `${exp.amount.toLocaleString()} TWD`;
+            }
+
+            list.innerHTML += `
+                <div class="expense-item">
+                    <div><strong>${exp.name}</strong> <br> <span style="color:#888; font-size:12px;">${displayAmount}</span></div>
+                    <button class="delete-btn" onclick="deleteExpense(${index})">🗑️</button>
+                </div>
+            `;
+        });
+
+        document.getElementById('total-jpy').innerText = Math.round(totalJPY).toLocaleString();
+        document.getElementById('total-twd').innerText = Math.round(totalTWD).toLocaleString();
+        localStorage.setItem('japan_expenses', JSON.stringify(expenses));
+    }
+
+    function addExpense() {
+        const name = document.getElementById('expense-name').value;
+        const amount = parseFloat(document.getElementById('expense-amount').value);
+        const currency = document.getElementById('expense-currency').value;
+
+        if(name && !isNaN(amount)) {
+            expenses.push({ name: name, amount: amount, currency: currency });
+            document.getElementById('expense-name').value = '';
+            document.getElementById('expense-amount').value = '';
+            updateBudgetUI();
+        }
+    }
+
+    function deleteExpense(index) {
+        expenses.splice(index, 1);
+        updateBudgetUI();
+    }
+
+    function copyText(text) {
+        navigator.clipboard.writeText(text).then(() => alert("✅ 已複製到剪貼簿：\n" + text));
+    }
+
+    function calcTWD() {
+        const jpy = document.getElementById('calc-jpy').value;
+        document.getElementById('calc-twd').innerText = jpy ? Math.round(jpy * JPY_RATE).toLocaleString() : 0;
+    }
+
+    updateBudgetUI();
+</script>
+</body>
+</html>
