@@ -1,0 +1,164 @@
+{
+  "tripData": [
+    {
+      "dayId": "day1",
+      "dateTitle": "9/2 (三)",
+      "spots": [
+        { "time": "10:35-16:05", "title": "香港 - 日本 (UO 870)", "vnTitle": "", "address": "", "transport": "飛機", "note": "" },
+        { "time": "16:00-20:00", "title": "至橫濱", "vnTitle": "", "address": "", "transport": "開車 80 分鐘", "note": "" },
+        { "time": "20:00", "title": "晚餐（壽喜燒）", "vnTitle": "荒井屋 壽喜燒 Araiya", "address": "2 Chome-17 Akebonocho, Naka Ward, Yokohama, Kanagawa 231-0057日本", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "21:00", "title": "飯店 Check-in", "vnTitle": "", "address": "", "transport": "開車", "note": "" },
+        { "time": "22:00", "title": "休息", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day2",
+      "dateTitle": "9/3 (四)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "橫濱麵包超人博物館", "vnTitle": "横浜アンパンマンこどもミュージアム", "address": "6-chōme-2-9 Minatomirai, Nishi Ward, Yokohama, Kanagawa 220-0012日本", "transport": "開車 15 分鐘", "note": "" },
+        { "time": "12:00", "title": "午餐（博物館內）", "vnTitle": "", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "13:00", "title": "西松屋", "vnTitle": "西松屋 オーケーみなとみらい店", "address": "日本〒220-0012 Kanagawa, Yokohama, Nishi Ward, Minatomirai, 6 Chome−3−6 オーケーみなとみらい店 1F", "transport": "走路 3 分鐘", "note": "" },
+        { "time": "14:00", "title": "下午茶", "vnTitle": "J.S. Pancake Cafe（Markis ）", "address": "", "transport": "開車 4 分鐘", "note": "", "color": "#722F37" },
+        { "time": "16:00", "title": "紅磚屋 1號屋", "vnTitle": "", "address": "", "transport": "開車 4 分鐘", "note": "" },
+        { "time": "17:00", "title": "摩天輪", "vnTitle": "コスモクロック21", "address": "", "transport": "", "note": "" },
+        { "time": "18:00", "title": "晚餐（湯咖哩）", "vnTitle": "Asian Bar RAMAI 横浜伊勢佐木モール店", "address": "日本〒231-0045 Kanagawa, Yokohama, Naka Ward, Isezakichō, 1 Chome−６−5 Kiraku, 7階", "transport": "開車 7 分鐘", "note": "", "color": "#D96C4A" },
+        { "time": "20:00", "title": "回飯店小孩休息", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "21:00", "title": "自由活動", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day3",
+      "dateTitle": "9/4 (五)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "至江之島", "vnTitle": "江の島なぎさ駐車場", "address": "1 Chome-2-1 Enoshima, Fujisawa, Kanagawa 251-0036日本", "transport": "開車 60 分鐘", "note": "" },
+        { "time": "11:00", "title": "江島神社", "vnTitle": "", "address": "", "transport": "停車、走路", "note": "青銅鳥居→商業街→邊津宮→中津宮→展望燈塔→奧津宮→岩屋→奧津宮→小路下山→商業街→青銅鳥居" },
+        { "time": "12:00", "title": "午餐（家常菜）", "vnTitle": "文佐食堂", "address": "1 Chome-6-22 Enoshima, Fujisawa, Kanagawa 251-0036日本", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "14:00", "title": "小町通り", "vnTitle": "", "address": "6-通り Komachi, Kamakura, Kanagawa 248-0005日本", "transport": "開車 15 分鐘", "note": "" },
+        { "time": "16:00", "title": "七里濱 沙灘", "vnTitle": "七里ヶ浜海岸駐車場", "address": "2 Chome-1-12 Shichirigahamahigashi, Kamakura, Kanagawa 248-0025日本", "transport": "開車 15 分鐘", "note": "" },
+        { "time": "18:00", "title": "晚餐", "vnTitle": "？", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "20:00-22:00", "title": "至飯店", "vnTitle": "", "address": "", "transport": "開車 100 分鐘", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day4",
+      "dateTitle": "9/5 (六)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "大石公園", "vnTitle": "", "address": "", "transport": "開車 20 分鐘", "note": "" },
+        { "time": "12:00", "title": "午餐（天婦羅）", "vnTitle": "HAOSTAY かつ好し", "address": "251-4 Funatsu, Fujikawaguchiko, Minamitsuru District, Yamanashi 401-0301日本", "transport": "開車 10 分鐘", "note": "", "color": "#D96C4A" },
+        { "time": "14:00", "title": "忍野八海", "vnTitle": "", "address": "Shibokusa, Oshino, Minamitsuru District, Yamanashi 401-0511日本", "transport": "開車 17 分鐘", "note": "" },
+        { "time": "15:00", "title": "魚公園", "vnTitle": "さかな公園", "address": "3098-1 Shibokusa, Oshino, Minamitsuru District, Yamanashi 401-0511日本", "transport": "開車 4 分鐘", "note": "" },
+        { "time": "16:00", "title": "山中湖白鳥浜", "vnTitle": "", "address": "1507-1 Yamanaka, Yamanakako, Minamitsuru District, Yamanashi 401-0501日本", "transport": "開車 10 分鐘", "note": "" },
+        { "time": "17:00", "title": "山中湖平野の浜", "vnTitle": "", "address": "13 Hirano, Yamanakako, Minamitsuru District, Yamanashi 401-0502日本", "transport": "開車 10 分鐘", "note": "" },
+        { "time": "18:00", "title": "去超市", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "19:00", "title": "晚餐（自己煮）", "vnTitle": "AirBnB", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "21:00", "title": "自由活動", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day5",
+      "dateTitle": "9/6 (日)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "富士野生動物園", "vnTitle": "富士サファリパーク", "address": "", "transport": "開車 50 分鐘", "note": "" },
+        { "time": "12:00", "title": "午餐（動物園內）", "vnTitle": "", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "15:00", "title": "御殿場", "vnTitle": "御殿場市", "address": "", "transport": "開車 35 分鐘", "note": "" },
+        { "time": "16:00-18:00", "title": "去飯店", "vnTitle": "東京イーストサイド ホテル櫂会", "address": "2 Chome-8-11 Shiomi, Koto City, Tokyo 135-0052日本", "transport": "開車 2.5 小時", "note": "" },
+        { "time": "19:00", "title": "晚餐", "vnTitle": "？", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "21:00", "title": "自由活動", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day6",
+      "dateTitle": "9/7 (一)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "待定行程", "vnTitle": "？", "address": "", "transport": "", "note": "" },
+        { "time": "12:00", "title": "午餐", "vnTitle": "？", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "13:00", "title": "teamlab", "vnTitle": "チームラボプラネッツ TOKYO DMM", "address": "6 Chome-1-16 Toyosu, Koto City, Tokyo 135-0061日本", "transport": "開車 10 分鐘", "note": "" },
+        { "time": "16:00", "title": "台場", "vnTitle": "ダイバーシティ東京プラザ", "address": "1 Chome-1-10 Aomi, Koto City, Tokyo 135-0064日本", "transport": "開車 10 分鐘", "note": "" },
+        { "time": "19:00", "title": "晚餐", "vnTitle": "？", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "21:00", "title": "自由活動", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day7",
+      "dateTitle": "9/8 (二)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00", "title": "豐洲市場", "vnTitle": "三井のリパーク 豊洲６丁目第３ 駐車場", "address": "", "transport": "開車 10 分鐘", "note": "注意：豐洲市場三、日休息" },
+        { "time": "12:00", "title": "午餐", "vnTitle": "豐洲市場", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "13:00", "title": "葛西臨海水族園", "vnTitle": "葛西臨海水族園", "address": "6 Chome-2-3 Rinkaicho, Edogawa City, Tokyo 134-8587日本", "transport": "開車 15 分鐘", "note": "" },
+        { "time": "19:00", "title": "晚餐", "vnTitle": "？", "address": "", "transport": "", "note": "", "color": "#D96C4A" },
+        { "time": "21:00", "title": "自由活動", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    },
+    {
+      "dayId": "day8",
+      "dateTitle": "9/9 (三)",
+      "spots": [
+        { "time": "08:00", "title": "起床", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "09:00", "title": "早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "11:00", "title": "飯店 Check-out", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "12:00-13:00", "title": "至機場＋還車", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "13:00", "title": "過關", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "15:45-19:40", "title": "日本 - 香港 (UO849)", "vnTitle": "", "address": "", "transport": "飛機", "note": "" },
+        { "time": "20:00", "title": "平安回家！", "vnTitle": "", "address": "", "transport": "", "note": "" }
+      ]
+    }
+  ],
+  "collectionData": [
+    {
+      "id": "c1",
+      "title": "🐟 豐洲 / 築地",
+      "items": [
+        { "name": "豐洲市場", "desc": "📝 豐洲市場三、日休息", "address": "豐洲" },
+        { "name": "萬葉俱樂部 天空溫泉足湯", "desc": "🕒 9:00 開門｜海鮮市場 + 溫泉", "address": "東京都江東區豐洲 6-5-1" },
+        { "name": "中華そば 勝本 豊洲店", "desc": "🍜 拉麵店", "address": "東京都江東區豐洲（千客萬來內）", "color": "#4A3018" },
+        { "name": "築地場外市場", "desc": "🚗 離飯店開車 15 分鐘，離豐洲市場開車 7 分鐘（其實已經到銀座了）", "address": "東京都中央區築地 4" },
+        { "name": "つきじ宮川本廛", "desc": "🍱 百年鰻魚名店（市場外圍）", "address": "東京都中央區築地 1-4-6", "color": "#4A3018" }
+      ]
+    },
+    {
+      "id": "c2",
+      "title": "🍜 木場",
+      "items": [
+        { "name": "麵屋 吉左右", "desc": "🍜 超有名拉麵店｜🚗 飯店過去開車 7 分鐘｜🕒 僅營業 一、四、六 11:30–15:00", "address": "東京都江東區東陽 1-11-3", "color": "#4A3018" }
+      ]
+    },
+    {
+      "id": "c3",
+      "title": "🎡 台場美食",
+      "items": [
+        { "name": "Katsuémon（炸豬排）", "desc": "🍽️ DiverCity 2 樓美食街區", "address": "DiverCity Tokyo Plaza 2F", "color": "#4A3018" },
+        { "name": "信州そば処 そじ坊", "desc": "🥢 蕎麥麵｜DiverCity 6 樓", "address": "DiverCity Tokyo Plaza 6F", "color": "#4A3018" },
+        { "name": "築地銀だこ", "desc": "🐙 連鎖章魚燒店", "address": "DiverCity Tokyo Plaza", "color": "#4A3018" },
+        { "name": "東京拉麵國技館 舞", "desc": "🍜 各種人氣拉麵任選", "address": "Aqua City Odaiba 5F", "color": "#4A3018" }
+      ]
+    },
+    {
+      "id": "c4",
+      "title": "🥩 潮見站周邊 / 9/6 晚餐備選",
+      "items": [
+        { "name": "和牛夫人", "desc": "🥩 用和牛的韓式燒肉店", "address": "潮見車站附近", "color": "#4A3018" },
+        { "name": "やき肉 潮見牧場 江東区", "desc": "🥩 本地人燒肉店", "address": "潮見車站附近", "color": "#4A3018" },
+        { "name": "木曽路 南砂店", "desc": "🍲 涮涮鍋（較高級/貴）｜🚗 開車 8 分鐘", "address": "東京都江東區南砂", "color": "#4A3018" }
+      ]
+    },
+    {
+      "id": "c5",
+      "title": "🍱 其他地區備選",
+      "items": [
+        { "name": "Akasaka Fukinuki（赤坂 赤坂 ふきぬき）", "desc": "🍱 鰻魚飯（距離稍遠）", "address": "東京都港區赤坂 3-6-11", "color": "#4A3018" }
+      ]
+    }
+  ]
+}
