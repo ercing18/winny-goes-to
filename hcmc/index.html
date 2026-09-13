@@ -181,18 +181,21 @@
 <div id="page-tools" class="content-section">
     <div class="timeline-card">
         <h3 class="spot-title">🏨 飯店資訊</h3>
-        <p class="vn-title">？</p>
-        <p class="spot-details">？</p>
+        <p class="vn-title">Roseland Sweet Hotel</p>
+        <p class="spot-details">04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南</p>
         <div class="action-buttons">
-            <button class="btn btn-copy" onclick="copyText('10A–10C Lê Thánh Tôn, Bến Nghé, District 1, Ho Chi Minh City')">複製越文地址</button>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Roseland Sweet Hotel')}" target="_blank" class="btn btn-map">在地圖開啟</a>
+                        <button class="btn btn-copy" onclick="copyText('04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南')">複製地址</button>
         </div>
+
     </div>
     <div class="timeline-card">
         <h3 class="spot-title">🏨 飯店資訊</h3>
         <p class="vn-title">Silverland Sakyo Hotel</p>
         <p class="spot-details">10A–10C Lê Thánh Tôn, Bến Nghé, District 1</p>
         <div class="action-buttons">
-            <button class="btn btn-copy" onclick="copyText('10A–10C Lê Thánh Tôn, Bến Nghé, District 1, Ho Chi Minh City')">複製越文地址</button>
+                        <a href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent('Silverland Sakyo Hotel')}" target="_blank" class="btn btn-map">在地圖開啟</a>
+                        <button class="btn btn-copy" onclick="copyText('10A–10C Lê Thánh Tôn, Bến Nghé, District 1, Ho Chi Minh City')">複製地址</button>
         </div>
     </div>
     <div class="timeline-card">
@@ -232,7 +235,7 @@
     let COLLECTION_DATA = [];
 
     // --- 抓取 JSON 檔案 ---
-    fetch('data.json')
+    fetch('data_hcmc.json')
         .then(response => {
             if(!response.ok) throw new Error('Network response was not ok');
             return response.json();
@@ -250,7 +253,7 @@
         })
         .catch(error => {
             console.error('資料讀取失敗:', error);
-            document.getElementById('loading-state').innerText = '無法讀取行程資料，請確認 data.json 檔案已上傳至正確位置。';
+            document.getElementById('loading-state').innerText = '無法讀取行程資料，請確認 data_hcmc.json 檔案已上傳至正確位置。';
         });
 
     // --- 頁面切換邏輯 ---
