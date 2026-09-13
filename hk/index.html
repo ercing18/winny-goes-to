@@ -6,14 +6,14 @@
     <title>香港 4天3夜自由行</title>
     <style>
         :root {
-            --bg-color: #F9F6F0;
-            --primary: #2B4C3B;
-            --secondary: #D4A373;
-            --accent: #E9D8A6;
-            --text-dark: #2C2C2C;
-            --text-light: #FAFAFA;
-            --card-bg: #FFFFFF;
-        }
+    --bg-color: #F3F4F6;     /* 淺水泥灰背景 */
+    --primary: #1B132C;      /* 深紫 */
+    --secondary: #4A2E80;    /* 深紫 卡片側邊與按鈕*/
+    --accent: #E9D5FF;       /* 淺紫襯底 */
+    --text-dark: #1F2937;    /* 深石墨灰文字 */
+    --text-light: #FAFAFA;   /* 純白文字 */
+    --card-bg: #FFFFFF;     /* 卡片純白背景 */
+}
         * { box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -223,7 +223,7 @@
     let COLLECTION_DATA = [];
 
     // --- 抓取 JSON 檔案 ---
-    fetch('data.json')
+    fetch('data_hk.json')
         .then(response => {
             if(!response.ok) throw new Error('Network response was not ok');
             return response.json();
@@ -241,7 +241,7 @@
         })
         .catch(error => {
             console.error('資料讀取失敗:', error);
-            document.getElementById('loading-state').innerText = '無法讀取行程資料，請確認 data.json 檔案已上傳至正確位置。';
+            document.getElementById('loading-state').innerText = '無法讀取行程資料，請確認 data_hk.json 檔案已上傳至正確位置。';
         });
 
     // --- 頁面切換邏輯 ---
