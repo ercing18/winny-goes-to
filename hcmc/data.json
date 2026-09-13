@@ -5,38 +5,37 @@
       "dateTitle": "9/23 (三)",
       "spots": [
         { "time": "18:45-20:25", "title": "香港機場 ✈️ 新山一機場", "vnTitle": "Sân bay Quốc tế Tân Sơn Nhất", "address": "Sân bay Quốc tế Tân Sơn Nhất", "transport": "飛機", "note": "" },
-        { "time": "22:00", "title": "飯店 Check-in", "vnTitle": "?", "address": "?", "transport": "?", "note": "" }
+        { "time": "22:00", "title": "飯店 Check-in", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "Grab", "note": "" }
       ]
     },
     {
       "dayId": "day2-B",
-      "dateTitle": "9/24 (B)",
+      "dateTitle": "9/24 (四)",
       "spots": [
         { "time": "09:00", "title": "早餐（咖啡）", "vnTitle": "Oasis Cafe", "address": "176/1b Đ. Lê Văn Sỹ, Phú Nhuận", "transport": "Grab", "note": "", "color": "#722F37" },
-        { "time": "10:00-12:00", "title": "越南古傳醫學博物館", "vnTitle": "Bảo tàng Y học Cổ truyền Việt Nam", "address": "41 Hoàng Dư Khương, Quận 10", "transport": "Grab", "note": "台幣 400 左右 / 營業時間 08:00–17:00" },
-        { "time": "12:00-14:00", "title": "午餐（法餐）", "vnTitle": "Bar Refinery 鴉片工廠", "address": "74/7C Hai Bà Trưng, Bến Nghé, Quận 1", "transport": "", "note": "先吃飯再去咖啡公寓", "color": "#722F37" },
-        { "time": "14:30-17:00", "title": "胡志明市藝術博物館", "vnTitle": "Bảo tàng Mỹ thuật Thành phố Hồ Chí Minh", "address": "97 Phó Đức Chính, Quận 1", "transport": "走路 17 分鐘 / Grab", "note": "成人 30,000 VND" },
+        { "time": "10:00", "title": "粉紅教堂 (新定教堂)", "vnTitle": "Nhà Thờ Giáo Xứ Tân Định", "address": "289 Hai Bà Trưng, Quận 3", "transport": "Grab", "note": "內部開放時間約 08:00–11:00 / 14:00–17:00" },
+        { "time": "11:00-12:00", "title": "濱城市場", "vnTitle": "Chợ Bến Thành", "address": "Ben Thanh, Ho Chi Minh", "transport": "Grab", "note": "" },
+        { "time": "12:00", "title": "換錢", "vnTitle": "Ha Tam Jewelry", "address": "2 Nguyễn An Ninh, Phường Bến Thành, Quận 1, Thành phố Hồ Chí Mnh", "transport": "濱城市場內", "note": ""},
+        { "time": "12:30", "title": "午餐（越南家常菜）", "vnTitle": "Bếp Mẹ Ỉn", "address": "136/9 Lê Thánh Tôn, Bến Thành, Quận 1", "transport": "走路 2 分鐘", "note": "Grab Dine Out 預約", "color": "#722F37" },
+        { "time": "14:30-17:00", "title": "胡志明市藝術博物館", "vnTitle": "Bảo tàng Mỹ thuật Thành phố Hồ Chí Minh", "address": "97 Phó Đức Chính, Quận 1", "transport": "走路 8 分鐘", "note": "成人 30,000 VND" },
         { "time": "17:00-18:00", "title": "胡志明市大劇院", "vnTitle": "Nhà hát Thành phố Hồ Chí Minh", "address": "07 Công trường Lam Sơn, Quận 1", "transport": "走路 13 分鐘 / Grab", "note": "" },
-        { "time": "18:00-18:30", "title": "換錢", "vnTitle": "Money Exchange 59", "address": "59 Đồng Khởi, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh", "transport": "走路 1 分鐘", "note": ""},
-        { "time": "18:30-20:30", "title": "CHÀO SHOW", "vnTitle": "", "address": "6 Nguyễn Siêu, Sài Gòn", "transport": "走路 7 分鐘", "note": "台幣 1200 左右 (Klook 預訂)", "color": "#722F37" },
-        { "time": "21:00", "title": "回飯店", "vnTitle": "？", "address": "？", "transport": "Grab", "note": "" }
+        { "time": "18:00", "title": "回飯店換裝", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "走路 6 分鐘", "note": "" },
+        { "time": "18:30-20:30", "title": "CHÀO SHOW", "vnTitle": "", "address": "6 Nguyễn Siêu, Sài Gòn", "transport": "走路 2 分鐘", "note": "台幣 1500 左右 (Klook 預訂)", "color": "#722F37" },
+        { "time": "21:00", "title": "回飯店休息", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "走路 2 分鐘", "note": "" }
       ]
     },
     {
       "dayId": "day3-B",
-      "dateTitle": "9/25 (B)",
+      "dateTitle": "9/25 (五)",
       "spots": [
-        { "time": "09:00", "title": "早餐（咖啡）", "vnTitle": "Cà Phê Miền Đồng Thảo", "address": "221A Nguyễn Trọng Tuyển, Phú Nhuận", "transport": "Grab", "note": "", "color": "#722F37" },
-        { "time": "10:00", "title": "粉紅教堂 (新定教堂)", "vnTitle": "Nhà Thờ Giáo Xứ Tân Định", "address": "289 Hai Bà Trưng, Quận 3", "transport": "Grab", "note": "內部開放時間約 08:00–11:00 / 14:00–17:00" },
+        { "time": "09:00", "title": "早餐（咖啡）", "vnTitle": "咖啡公寓附近吧", "address": "42 Nguyễn Huệ, Quận 1", "transport": "走路 11 分鐘", "note": "", "color": "#722F37" },
+        { "time": "09:00-10:15", "title": "咖啡公寓", "vnTitle": "The Cafe Apartment", "address": "42 Nguyễn Huệ, Quận 1", "transport": "走路 11 分鐘", "note": "" },
         { "time": "10:15", "title": "公司抵達", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "11:00", "title": "前往機場方向", "vnTitle": "原飯店 Check-out", "address": "", "transport": "", "note": "" },
-        { "time": "12:00", "title": "前往新飯店 & 寄行李", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn, Quận 1", "transport": "飯店接送", "note": "Check-in 14:00" },
-        { "time": "13:00-15:00", "title": "午餐（越南家常菜）", "vnTitle": "Bếp Mẹ Ỉn", "address": "136/9 Lê Thánh Tôn, Bến Thành, Quận 1", "transport": "Grab", "note": "還沒預約 (請確認時間)", "color": "#722F37" },
-        { "time": "15:00-16:00", "title": "濱城市場", "vnTitle": "Chợ Bến Thành", "address": "Ben Thanh, Ho Chi Minh", "transport": "走路 3 分鐘", "note": "" },
-        { "time": "15:30", "title": "換錢", "vnTitle": "Ha Tam Jewelry", "address": "2 Nguyễn An Ninh, Phường Bến Thành, Quận 1, Thành phố Hồ Chí Mnh", "transport": "濱城市場內", "note": ""},
-        { "time": "16:00-17:00", "title": "咖啡公寓", "vnTitle": "The Cafe Apartment", "address": "42 Nguyễn Huệ, Quận 1", "transport": "走路 11 分鐘", "note": "" },
-        { "time": "17:00-17:45", "title": "西貢書街", "vnTitle": "Đường sách Thành phố Hồ Chí Minh", "address": "2 Đ. Nguyễn Văn Bình, Bến Nghé, Quận 1", "transport": "走路 16 分鐘 / Grab", "note": "" },
-        { "time": "17:45-18:15", "title": "西貢中心郵政局", "vnTitle": "Bưu điện trung tâm Sài Gòn", "address": "02 Công trường Công xã Paris, Quận 1", "transport": "走路 3 分鐘", "note": "" },
+        { "time": "11:00", "title": "原飯店 Check-out & 前往新飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn, Quận 1", "transport": "Grab", "note": "" },
+        { "time": "12:00-14:00", "title": "午餐（法餐）", "vnTitle": "Bar Refinery 鴉片工廠", "address": "74/7C Hai Bà Trưng, Bến Nghé, Quận 1", "transport": "", "note": "", "color": "#722F37" },
+        { "time": "15:00-17:00", "title": "胡志明市博物館", "vnTitle": "Bảo tàng Thành phố Hồ Chí Minh", "address": "65 Lý Tự Trọng, Sài Gòn, Hồ Chí Minh, 越南", "transport": "走路 12 分鐘", "note": "" },
+        { "time": "17:00-17:15", "title": "西貢中心郵政局", "vnTitle": "Bưu điện trung tâm Sài Gòn", "address": "02 Công trường Công xã Paris, Quận 1", "transport": "走路 9 分鐘", "note": "" },
+        { "time": "17:15-18:15", "title": "西貢書街", "vnTitle": "Đường sách Thành phố Hồ Chí Minh", "address": "2 Đ. Nguyễn Văn Bình, Bến Nghé, Quận 1", "transport": "走路 3 分鐘", "note": "" },
         { "time": "18:30", "title": "晚餐", "vnTitle": "Pizza 4P's Lê Thánh Tôn", "address": "Lê Thánh Tôn, Sài Gòn", "transport": "走路 12 分鐘", "note": "", "color": "#D96C4A" },
         { "time": "晚上", "title": "回飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn, Quận 1", "transport": "走路 2 分鐘", "note": "" }
       ]
@@ -102,8 +101,9 @@
       { "name": "Maison Marou", "desc": "\uD83D\uDCDD 巧克力品牌（咖啡、甜點、巧克力）", "address": "待補", "color": "#4A3018" },
       { "name": "Tonkin Egg Coffee", "desc": "\uD83D\uDCDD 蛋咖啡", "address": "待補" },
       { "name": "Little Hà Nội Egg Coffee", "desc": "\uD83D\uDCDD 蛋咖啡", "address": "待補" },
-      { "name": "Cong Ca Phe", "desc": "\uD83D\uDCDD 椰奶咖啡冰沙", "address": "待補" }
-      ] },
+      { "name": "Cong Ca Phe", "desc": "\uD83D\uDCDD 椰奶咖啡冰沙", "address": "待補" },
+      { "name": "Cà Phê Miền Đồng Thảo", "desc": "\uD83D\uDCDD 原本在機場附近要拿來當早餐", "address": "221A Nguyễn Trọng Tuyển, Phú Nhuận" }
+    ] },
     { "id": "c4", "title": "\uD83C\uDF5C 吃東西", "items": [
       { "name": "Bánh Mì Huynh Hoa", "desc": "\uD83D\uDCDD 越南法式麵包", "address": "26 Lê Thị Riêng, Bến Thành, Hồ Chí Minh", "color": "#4A3018" },
       { "name": "Phở Việt Nam", "desc": "\uD83D\uDCDD 必比登越式河粉", "address": "14 Phạm Hồng Thái, Bến Thành, Hồ Chí Minh", "color": "#4A3018" },
@@ -112,7 +112,9 @@
     ] },
     { "id": "c5", "title": "🎣 漏網之魚", "items": [
       { "name": "木偶戲", "desc": "\uD83D\uDCDD Nhà Hát Múa Rối Nước Rồng Vàng｜\uD83D\uDCB0 台幣 400", "address": "55B Nguyễn Thị Minh Khai, Bến Thành, Hồ Chí Minh" },
-      { "name": "AO Show", "desc": "\uD83D\uDCDD Nhà hát Thành phố Hồ Chí Minh｜\uD83D\uDCB0 台幣 800-2000", "address": "07 Công trường Lam Sơn, Sài Gòn, Hồ Chí Minh"}
-    ] }
+      { "name": "AO Show", "desc": "\uD83D\uDCDD Nhà hát Thành phố Hồ Chí Minh｜\uD83D\uDCB0 台幣 800-2000", "address": "07 Công trường Lam Sơn, Sài Gòn, Hồ Chí Minh"},
+      { "name": "換錢（大劇院旁）", "desc": "\uD83D\uDCDD Money Exchange 59", "address": "59 Đồng Khởi, Bến Nghé, Quận 1, Thành phố Hồ Chí Minh"},
+      { "name": "越南古傳醫學博物館", "desc": "\uD83D\uDCDD Bảo tàng Y học Cổ truyền Việt Nam （8:00-17:00）｜\uD83D\uDCB0 台幣 400 左右", "address": "41 Hoàng Dư Khương, Hòa Hưng, Hồ Chí Minh, 越南"}
+      ] }
   ]
 }
