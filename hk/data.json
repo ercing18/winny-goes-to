@@ -7,7 +7,7 @@
         { "time": "11:10", "title": "高雄組起飛", "vnTitle": "高雄小港機場", "address": "高雄市小港區中厝里中山四路2號", "transport": "", "note": "" },
         { "time": "12:00", "title": "新竹組起飛", "vnTitle": "桃園國際機場", "address": "桃園市大園區三石里航站南路9號", "transport": "", "note": "" },
         { "time": "12:50", "title": "高雄組抵達香港", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "飛機", "note": "" },
-        { "time": "14:05", "title": "新竹組抵達香港", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "飛機", "note": "與高雄組會合" },{ "time": "21:00", "title": "回飯店休息", "vnTitle": "尖沙咀夢卓恩酒店", "address": "", "transport": "", "note": "" },
+        { "time": "14:05", "title": "新竹組抵達香港", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "飛機", "note": "與高雄組會合" },
         { "time": "15:30", "title": "飯店 check-in", "vnTitle": "尖沙咀夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "機場快綫/的士", "note": "" },
         { "time": "16:30", "title": "逛荃灣", "vnTitle": "荃灣各種商場", "address": "", "transport": "地鐵", "note": "" },
         { "time": "18:30", "title": "晚餐 (ft. 鋒家)", "vnTitle": "海天花園酒家", "address": "香港新界荃灣大河道100號", "transport": "走路", "note": "" },
