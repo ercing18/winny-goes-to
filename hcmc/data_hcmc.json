@@ -4,7 +4,7 @@
       "dayId": "day1",
       "dateTitle": "9/23 (三)",
       "spots": [
-        { "time": "18:45-20:25", "title": "香港機場 ✈️ 新山一機場", "vnTitle": "Sân bay Quốc tế Tân Sơn Nhất", "address": "Sân bay Quốc tế Tân Sơn Nhất", "transport": "飛機", "note": "" },
+        { "time": "18:45-20:25", "title": "香港機場 ✈️ 新山一機場", "vnTitle": "Sân bay Quốc tế Tân Sơn Nhất", "address": "Sân bay Quốc tế Tân Sơn Nhất", "transport": "飛機", "note": "VN595" },
         { "time": "22:00", "title": "飯店 Check-in", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "Grab", "note": "" }
       ]
     },
@@ -16,11 +16,11 @@
         { "time": "10:00", "title": "粉紅教堂 (新定教堂)", "vnTitle": "Nhà Thờ Giáo Xứ Tân Định", "address": "289 Hai Bà Trưng, Quận 3", "transport": "Grab", "note": "內部開放時間約 08:00–11:00 / 14:00–17:00" },
         { "time": "11:00-12:00", "title": "濱城市場", "vnTitle": "Chợ Bến Thành", "address": "Ben Thanh, Ho Chi Minh", "transport": "Grab", "note": "" },
         { "time": "12:00", "title": "換錢", "vnTitle": "Ha Tam Jewelry", "address": "2 Nguyễn An Ninh, Phường Bến Thành, Quận 1, Thành phố Hồ Chí Mnh", "transport": "濱城市場內", "note": ""},
-        { "time": "12:30", "title": "午餐（越南家常菜）", "vnTitle": "Bếp Mẹ Ỉn", "address": "136/9 Lê Thánh Tôn, Bến Thành, Quận 1", "transport": "走路 2 分鐘", "note": "Grab Dine Out 預約", "color": "#722F37" },
+        { "time": "12:30", "title": "午餐（越南家常菜）", "vnTitle": "Bếp Mẹ Ỉn", "address": "136/9 Lê Thánh Tôn, Bến Thành, Quận 1", "transport": "走路 2 分鐘", "note": "已 Grab Dine Out 預約", "color": "#722F37" },
         { "time": "14:30-17:00", "title": "胡志明市藝術博物館", "vnTitle": "Bảo tàng Mỹ thuật Thành phố Hồ Chí Minh", "address": "97 Phó Đức Chính, Quận 1", "transport": "走路 8 分鐘", "note": "成人 30,000 VND" },
         { "time": "17:00-18:00", "title": "胡志明市大劇院", "vnTitle": "Nhà hát Thành phố Hồ Chí Minh", "address": "07 Công trường Lam Sơn, Quận 1", "transport": "走路 13 分鐘 / Grab", "note": "" },
         { "time": "18:00", "title": "回飯店換裝", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "走路 6 分鐘", "note": "" },
-        { "time": "18:30-20:30", "title": "CHÀO SHOW", "vnTitle": "", "address": "6 Nguyễn Siêu, Sài Gòn", "transport": "走路 2 分鐘", "note": "台幣 1500 左右 (Klook 預訂)", "color": "#722F37" },
+        { "time": "18:30-20:30", "title": "CHÀO SHOW", "vnTitle": "", "address": "6 Nguyễn Siêu, Sài Gòn", "transport": "走路 2 分鐘", "note": "已 Trip.com 預訂。台幣 1500 左右", "color": "#722F37" },
         { "time": "21:00", "title": "回飯店休息", "vnTitle": "Roseland Sweet Hotel", "address": "04 Cao Bá Quát, Phường, Sài Gòn, Hồ Chí Minh 70000越南", "transport": "走路 2 分鐘", "note": "" }
       ]
     },
@@ -44,23 +44,24 @@
       "dayId": "day4",
       "dateTitle": "9/26 (六)",
       "spots": [
-        { "time": "09:00", "title": "飯店早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "10:00-17:00", "title": "水仙樂園", "vnTitle": "Suoi Tien Theme Park", "address": "120 Xa Lo Ha Noi (Dist 9) Thu Duc", "transport": "Grab / 93號公車（濱城市場出發））", "note": "Grab 約25萬 / 公車7千。門票成人15萬，140cm以下8萬" },
-        { "time": "18:00", "title": "晚餐", "vnTitle": "The Canvas Restaurant", "address": "LOTTE HOTEL SAIGON, 2A - 4A Tôn Đức Thắng", "transport": "Grab", "note": "", "color": "#D96C4A" },
-        { "time": "20:30", "title": "回飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn", "transport": "走路 7 分鐘", "note": "" }
+        { "time": "07:00", "title": "飯店早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "08:00-17:00", "title": "湄公河一日遊", "vnTitle": "", "address": "", "transport": "行程接駁", "note": "1000台幣左右 (KKDAY 預訂)" },
+        { "time": "18:00", "title": "晚餐", "vnTitle": "Mandarine – Finest Vietnamese Cuisine", "address": "11a Ngô Văn Năm, Quận 1", "transport": "", "note": "",  "color": "#D96C4A" },
+        { "time": "21:00", "title": "地標塔81 高空酒吧", "vnTitle": "Landmark 81 (Blank Sky Lounge)", "address": "208 Nguyen Huu Canh, Floor 75th–76th", "transport": "Grab", "note": "已 FB 預約。一杯雞尾酒大概台幣 250。"},
+        { "time": "22:30", "title": "回飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn", "transport": "Grab", "note": "" }
       ]
     },
     {
       "dayId": "day5",
       "dateTitle": "9/27 (日)",
       "spots": [
-        { "time": "07:00", "title": "飯店早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "08:00-17:00", "title": "湄公河一日遊", "vnTitle": "", "address": "", "transport": "行程接駁", "note": "1000台幣左右 (KKDAY 預訂)" },
-        { "time": "18:00", "title": "晚餐", "vnTitle": "Mandarine – Finest Vietnamese Cuisine", "address": "11a Ngô Văn Năm, Quận 1", "transport": "", "note": "",  "color": "#D96C4A" },
-        { "time": "20:00", "title": "地標塔81 高空酒吧", "vnTitle": "Landmark 81 (Blank Sky Lounge)", "address": "208 Nguyen Huu Canh, Floor 75th–76th", "transport": "Grab", "note": "一杯雞尾酒大概台幣 250。需事先 FB 預約(還沒預約)"},
-        { "time": "21:30", "title": "回飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn", "transport": "Grab", "note": "" }
+        { "time": "09:00", "title": "飯店早餐", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "10:00-17:00", "title": "水仙樂園", "vnTitle": "Suoi Tien Theme Park", "address": "120 Xa Lo Ha Noi (Dist 9) Thu Duc", "transport": "Grab / 93號公車（濱城市場出發））", "note": "Grab 約25萬 / 公車7千。門票成人15萬，140cm以下8萬" },
+        { "time": "18:00", "title": "晚餐", "vnTitle": "The Canvas Restaurant", "address": "LOTTE HOTEL SAIGON, 2A - 4A Tôn Đức Thắng", "transport": "Grab", "note": "", "color": "#D96C4A" },
+        { "time": "20:30", "title": "回飯店", "vnTitle": "Silverland Sakyo Hotel", "address": "10A–10C Lê Thánh Tôn", "transport": "走路 7 分鐘", "note": "" }
       ]
     },
+
     {
       "dayId": "day6",
       "dateTitle": "9/28 (一)",
@@ -68,7 +69,7 @@
         { "time": "08:00", "title": "飯店大廳集合退房", "vnTitle": "前往機場方向", "address": "", "transport": "飯店接送", "note": "" },
         { "time": "09:00", "title": "泰迪熊咖啡廳", "vnTitle": "Tiệm Cà Phê Mê Gò Vấp", "address": "672A50 Đ. Phan Văn Trị, Quận Gò Vấp", "transport": "Grab", "note": "", "color": "#722F37" },
         { "time": "10:00", "title": "前往機場", "vnTitle": "Sân bay Quốc tế Tân Sơn Nhất", "address": "", "transport": "Grab", "note": "" },
-        { "time": "13:35-17:25", "title": "新山一機場 ✈️ 香港機場", "vnTitle": "", "address": "", "transport": "飛機", "note": "" },
+        { "time": "13:35-17:25", "title": "新山一機場 ✈️ 香港機場", "vnTitle": "", "address": "", "transport": "飛機", "note": "VN594" },
         { "time": "18:30", "title": "平安回家", "vnTitle": "", "address": "", "transport": "", "note": "" }
       ]
     }
