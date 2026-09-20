@@ -8,10 +8,10 @@
         { "time": "12:00", "title": "新竹組起飛", "vnTitle": "桃園國際機場", "address": "桃園市大園區三石里航站南路9號", "transport": "", "note": "" },
         { "time": "12:50", "title": "高雄組抵達香港", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "飛機", "note": "" },
         { "time": "14:05", "title": "新竹組抵達香港", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "飛機", "note": "與高雄組會合" },
+        { "time": "NOTE", "title": "備註", "vnTitle": "", "address": "", "transport": "", "note": "結果高雄組大Delay", "color": "#4A3018"},
         { "time": "15:30", "title": "飯店 check-in", "vnTitle": "尖沙咀夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "機場快綫/的士", "note": "" },
-        { "time": "16:30", "title": "逛荃灣", "vnTitle": "荃灣各種商場", "address": "", "transport": "地鐵", "note": "" },
         { "time": "18:30", "title": "晚餐 (ft. 鋒家)", "vnTitle": "海天花園酒家", "address": "香港新界荃灣大河道100號", "transport": "走路", "note": "" },
-        { "time": "20:30", "title": "回飯店休息", "vnTitle": "尖沙咀夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" }
+        { "time": "22:30", "title": "回飯店休息", "vnTitle": "尖沙咀夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" }
       ]
     },
     {
@@ -19,41 +19,41 @@
       "dateTitle": "\uD83C\uDF82 9/18 (五)",
       "spots": [
         { "time": "09:00", "title": "酒店早餐", "vnTitle": "尖沙咀夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" },
-        { "time": "11:00", "title": "逛旺角", "vnTitle": "", "address": "", "transport": "地鐵", "note": "E1 出口 → 朗豪坊 → 女人街 → 波鞋街 → 網紅天橋 → B3 出口" },
-        { "time": "14:00", "title": "食撈麵", "vnTitle": "麥文記麵家", "address": "佐敦白加士街51號", "transport": "地鐵佐敦站", "note": "C2 出口" },
-        { "time": "15:00", "title": "食燉奶", "vnTitle": "澳洲牛奶公司", "address": "佐敦白加士街47-49號", "transport": "", "note": "" },
-        { "time": "16:00", "title": "M+ 視覺文化博物館", "vnTitle": "", "address": "西九文化區", "transport": "的士/巴士", "note": "海濱長廊打卡點導航至 Cafe Boheme" },
-        { "time": "20:00", "title": "幻彩詠香江", "vnTitle": "", "address": "維多利亞港旁", "transport": "", "note": "" },
-        { "time": "20:30", "title": "逛尖沙咀", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "21:30", "title": "食晚餐", "vnTitle": "榕記陳皮燒鵝", "address": "香港九龍尖沙咀金巴利道27-31號永利大廈地下4,23號舖", "transport": "的士", "note": "" },
-        { "time": "22:30", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "走路三分鐘", "note": "" }
+        { "time": "14:00", "title": "食茶餐廳", "vnTitle": "源記餐廳", "address": "香港新界葵芳葵義路葵芳閣1座", "transport": "地鐵葵芳站", "note": "B 出口" },
+        { "time": "15:00", "title": "逛葵芳", "vnTitle": "新都會＋葵廣", "address": "香港新界葵涌葵富路7至11號", "transport": "走路", "note": "" },
+        { "time": "17:00", "title": "食糖水", "vnTitle": "佳佳甜品", "address": "香港九龍佐敦白加士街113-115號號地舖道", "transport": "地鐵佐敦站", "note": "" },
+        { "time": "18:30", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "地鐵尖沙咀站", "note": "N1 出口" },
+        { "time": "20:00", "title": "幻彩詠香江", "vnTitle": "", "address": "維多利亞港旁", "transport": "", "note": "取消了，但剛好有無人機表演" },
+        { "time": "21:30", "title": "食晚餐", "vnTitle": "榕記陳皮燒鵝", "address": "香港九龍尖沙咀金巴利道27-31號永利大廈地下4,23號舖", "transport": "走路", "note": "" },
+        { "time": "22:30", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "走路", "note": "" }
       ]
     },
     {
       "dayId": "day3",
       "dateTitle": "9/19 (六)",
       "spots": [
-        { "time": "NOTE", "title": "備註", "vnTitle": "", "address": "", "transport": "", "note": "捨捨可能脫隊找朋友，免免可能要回去吃晚餐", "color": "#4A3018"},
+        { "time": "NOTE", "title": "備註", "vnTitle": "", "address": "", "transport": "", "note": "捨捨脫隊找朋友，免免要回去吃晚餐", "color": "#4A3018"},
         { "time": "09:00", "title": "酒店早餐", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" },
-        { "time": "11:00", "title": "鵝頸橋打小人", "vnTitle": "", "address": "香港香港島鵝頸堅拿道東1號", "transport": "地鐵銅鑼灣站", "note": "A 出口" },
-        { "time": "12:00", "title": "逛銅鑼灣", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "13:30", "title": "中環、上環", "vnTitle": "", "address": "", "transport": "地鐵/叮叮", "note": "有機會延後" },
-        { "time": "15:00", "title": "食生滾粥", "vnTitle": "生記粥品專家", "address": "上環畢街7-9號", "transport": "走路", "note": "" },
-        { "time": "16:00", "title": "準備上山", "vnTitle": "山頂纜車", "address": "St. John's Building, 33 Garden Rd, Central, Hong Kong Island", "transport": "中環站走路13分鐘", "note": "\uD83D\uDCB0 台幣 300 左右｜\uD83D\uDCDD 視情況有機會取消" },
-        { "time": "16:00", "title": "抵達太平山頂，逛蠟像館", "vnTitle": "香港杜莎夫人蠟像館", "address": "Shop P101, The Peak Tower, No, 128 Peak Rd, The Peak, Hong Kong Island", "transport": "山頂纜車", "note": "\uD83D\uDCB0 台幣 700 左右｜\uD83D\uDCDD 視情況有機會取消" },
-        { "time": "19:30", "title": "食煲仔飯", "vnTitle": "興記菜館", "address": "香港九龍油麻地廟街15號", "transport": "的士", "note": "可以順便逛逛廟街" },
-        { "time": "19:30", "title": "食糖水", "vnTitle": "佳佳甜品", "address": "香港九龍佐敦白加士街113-115號號地舖道", "transport": "走路", "note": "" },
-        { "time": "22:00", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" }
+        { "time": "12:30", "title": "鵝頸橋打小人", "vnTitle": "", "address": "香港香港島鵝頸堅拿道東1號", "transport": "地鐵銅鑼灣站", "note": "A 出口" },
+        { "time": "13:30", "title": "逛銅鑼灣＋惠康", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "14:00", "title": "食燉奶", "vnTitle": "義順牛奶公司", "address": "香港香港島銅鑼灣駱克道506號", "transport": "走路", "note": "" },
+        { "time": "16:00", "title": "食生滾粥", "vnTitle": "生記粥品專家", "address": "上環畢街7-9號", "transport": "地鐵上環站", "note": "" },
+        { "time": "18:00", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "地鐵尖沙咀站", "note": "N1 出口" },
+        { "time": "20:30", "title": "食點心", "vnTitle": "一點心", "address": "香港九龍尖沙咀赫德道4號號地下", "transport": "走路", "note": "" },
+        { "time": "21:30", "title": "逛尖沙咀", "vnTitle": "港邊與星光大道", "address": "", "transport": "走路", "note": "" },
+        { "time": "22:00", "title": "回飯店", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "走路", "note": "" }
       ]
     },
     {
       "dayId": "day4",
       "dateTitle": "9/20 (日)",
       "spots": [
-        { "time": "08:00", "title": "酒店早餐（吃少少）", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" },
-        { "time": "11:00", "title": "飯店退房 & 帶著行李出發", "vnTitle": "", "address": "", "transport": "計程車/地鐵", "note": "" },
-        { "time": "11:30", "title": "飲茶 (ft. 鋒家)", "vnTitle": "", "address": "", "transport": "", "note": "" },
-        { "time": "14:00", "title": "荃灣出發前往機場", "vnTitle": "", "address": "", "transport": "計程車/機場快線", "note": "" },
+        { "time": "09:00", "title": "酒店早餐（吃少少）", "vnTitle": "尖沙嘴夢卓恩酒店", "address": "香港九龍尖沙咀赫德道8A號", "transport": "", "note": "" },
+        { "time": "12:00", "title": "飯店退房 & 行李寄放", "vnTitle": "", "address": "", "transport": "", "note": "" },
+        { "time": "12:30", "title": "食點心", "vnTitle": "一點心", "address": "香港九龍尖沙咀赫德道4號號地下", "transport": "走路", "note": "" },
+        { "time": "14:00", "title": "高雄組出發往機場", "vnTitle": "", "address": "", "transport": "計程車", "note": "" },
+        { "time": "14:00", "title": "新竹組逛 K11", "vnTitle": "K11人文購物藝術館 K11 MUSEA", "address": "香港九龍尖沙咀梳士巴利道18號", "transport": "走路", "note": "" },
+        { "time": "15:00", "title": "新竹組出發往機場", "vnTitle": "", "address": "", "transport": "計程車", "note": "" },
         { "time": "16:35", "title": "高雄組出發", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "", "note": "" },
         { "time": "18:10", "title": "高雄組抵達", "vnTitle": "高雄小港機場", "address": "高雄市小港區中厝里中山四路2號", "transport": "飛機", "note": "" },
         { "time": "18:15", "title": "新竹組出發", "vnTitle": "香港國際機場", "address": "香港新界赤鱲角翔天路1號", "transport": "", "note": "" },
