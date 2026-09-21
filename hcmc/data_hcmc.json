@@ -81,7 +81,9 @@
       { "name": "第一郡衣服｜The New Playground", "desc": "", "address": "26 Lý Tự Trọng, Sài Gòn, Hồ Chí Minh 700000越南" },
       { "name": "第一郡女裝街｜打卡定位從 Dottie 開始逛", "desc": "Dottie → Cici → OLV → Rechic → Miều →  Secodee → Kido → The MAVEN → Central Market - the new play ground", "address": "170 Nguyễn Trãi, Bến Thành, Hồ Chí Minh, 越南", "color": "#722F37" },
       { "name": "第三郡女裝街｜打卡定位從 Mosaic Space 開始逛", "desc": "", "address": "31/23 Đ. Lê Văn Sỹ, Phường 13, Quận 3", "color": "#722F37" },
-      { "name": "連鎖店｜LEVENTS®", "desc": "", "address": "LEVENTS®" }
+      { "name": "連鎖店｜LEVENTS®", "desc": "", "address": "LEVENTS®" },
+      { "name": "香水｜Gia Perfumerie", "desc": "濱城市場附近", "address": "190 Lý Tự Trọng Street, District 1", "color": "#722F38" },
+      { "name": "香水｜XXIV Perfume Bar", "desc": "金融區附近", "address": "130 Nguyen Cong Tru Street, Sai Gon Ward", "color": "#722F38" }
     ] },
     {
       "id": "c2",
